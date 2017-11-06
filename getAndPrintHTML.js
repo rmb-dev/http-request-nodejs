@@ -13,8 +13,6 @@ function getAndPrintHTML () {
     response.setEncoding('utf8');
 
     response.on('data', function(data) {
-      // result =  result + data.toString() + '\n';
-      //console.log(data);
       result = (result + data.toString() + '\n');
     });
 
@@ -29,8 +27,6 @@ function getAndPrintHTML () {
 
 
   });
-//why could not put the console.log here?
-// return console.log(result);
 
 };
 
